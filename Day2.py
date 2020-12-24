@@ -64,6 +64,21 @@ for occurance in range_list:
         valid_passwords += 1 
     
 print("The number of valid passwords is " + str(valid_passwords))
+
+
+#Answer for Question 2: 
+
+
+valid_passwords = 0
+for occurance in range_list:
+    first_index = int(occurance[0])
+    second_index = int(occurance[1])
+    substring = occurance[2]
+    string = occurance[3]
+    if (string[first_index - 1] == substring) ^ (string[second_index - 1] == substring):
+        valid_passwords += 1 
+
+print("The number of valid passwords is " + str(valid_passwords))
         
 
     
